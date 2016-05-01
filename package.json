@@ -1,0 +1,14 @@
+{
+  "name": "tpromise",
+  "version": "1.0.0",
+  "description": "A simple Promise implementation",
+  "main": "TPromise.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chengjie.lian",
+  "license": "ISC",
+  "devDependencies": {
+    "promises-aplus-tests": "^2.1.1"
+  }
+}
