@@ -178,49 +178,6 @@
 
     }
 
-    // TPromise.prototype.onRejected = function(){
-    //     var me = this, rejectFn, nextP, v;
-    //     runAsync(function(){
-    //         while(me.queue.length){
-    //             v = me.queue.shift();
-    //             rejectFn = v.onReject;
-    //             nextP = v.nextP;
-    //             if(!isFunction(rejectFn) && me.status === 'REJECTED'){
-    //                 reject(nextP, me.value);
-    //                 continue;
-    //             }
-    //             var rv;
-    //             try{
-    //                 rv = rejectFn.call(undefined, me.value);
-    //             }catch(e){
-    //                 reject(nextP, e);
-    //                 continue;
-    //             }
-    //             process(nextP, rv);
-    //         }
-    //     })
-    // }
-
-    // TPromise.prototype.onFulfilled = function(){
-    //     var me = this, fulfillFn, nextP, v;
-    //     while (this.queue.length) {
-    //         v = this.queue.shift();
-    //         fulfillFn = v.onFulfill;
-    //         nextP = v.nextP;
-    //         if(!isFunction(fulfillFn) && me.status === 'FULFILLED'){
-    //             fulfill(nextP, me.value);
-    //             continue;
-    //         }
-    //         var rv;
-    //         try{
-    //             rv = fulfillFn.call(undefined, me.value);
-    //         }catch(e){
-    //             reject(nextP, e);
-    //             continue;
-    //         }
-    //         process(nextP, rv);
-    //     }
-    // }
     // window.TPromise = TPromise;
     module.exports = {
         resolved: function (value) {
