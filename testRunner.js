@@ -1,3 +1,4 @@
+// test
 var adapter = require('./TPromise.js');
 
 var promisesAplusTests = require("promises-aplus-tests");
